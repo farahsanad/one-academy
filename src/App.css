@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0b1f3a;
+  color: #f4f0e8;
+  font-family: "Alexandria", sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.site {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(214, 162, 29, 0.12),
+      transparent 28%
+    ),
+    #0b1f3a;
+}
+
+/* HEADER */
+
+.header {
+  width: min(100% - 40px, 1180px);
+  min-height: 84px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  direction: rtl;
+}
+
+.logo {
+  width: 118px;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(244, 240, 232, 0.18);
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.04);
+  color: #f4f0e8;
+
+  font-size: 30px;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.menu:hover {
+  background: rgba(214, 162, 29, 0.12);
+  border-color: rgba(214, 162, 29, 0.45);
+}
+
+/* HERO — MOBILE FIRST */
+
+.hero {
+  width: min(100% - 40px, 1180px);
+  margin: 0 auto;
+  padding: 34px 0 56px;
+
+  direction: rtl;
+}
+
+.hero-content {
+  text-align: right;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+
+  color: #d6a21d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  color: #f4f0e8;
+
+  font-size: clamp(38px, 10vw, 54px);
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.hero h1 span {
+  color: #d6a21d;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: 20px 0 0;
+
+  color: #d6d7d9;
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.booking-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 170px;
+  min-height: 54px;
+  margin-top: 28px;
+  padding: 0 30px;
+
+  border-radius: 14px;
+
+  background: #d6a21d;
+  color: #0b1f3a;
+
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+
+  box-shadow: 0 10px 24px rgba(214, 162, 29, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.booking-button:hover {
+  transform: translateY(-2px);
+  background: #e1b236;
+  box-shadow: 0 14px 30px rgba(214, 162, 29, 0.25);
+}
+
+/* HERO IMAGE */
+
+.hero-image {
+  margin-top: 34px;
+  overflow: hidden;
+
+  border: 2px solid rgba(214, 162, 29, 0.35);
+  border-radius: 28px;
+
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* DESKTOP */
+
+@media (min-width: 900px) {
+  .header {
+    min-height: 96px;
+  }
+
+  .logo {
+    width: 136px;
+  }
+
+  .hero {
+    min-height: calc(100vh - 96px);
+    padding: 54px 0 70px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 520px;
+  }
+
+  .hero h1 {
+    font-size: clamp(54px, 5vw, 78px);
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .booking-button {
+    min-width: 190px;
+  }
+
+  .hero-image {
+    margin-top: 0;
+  }
+}
