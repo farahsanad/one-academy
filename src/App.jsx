@@ -29,9 +29,19 @@ function App() {
             والإنجاز إلى ثقة تصنع المستقبل.
           </p>
 
-          <a className="booking-button" href="#contact">
-            احجز الآن
-          </a>
+<a
+  className="booking-button"
+  href="https://wa.me/201036545160?text=مرحبًا%20ONE%20Academy،%20أرغب%20في%20الاستفسار%20عن%20الكورسات"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  احجز الآن
+</a>
+
+<div className="hero-contact">
+  <span>واتساب / اتصال</span>
+  <strong dir="ltr">01036545160</strong>
+</div>
         </div>
 
         <div className="hero-image">
