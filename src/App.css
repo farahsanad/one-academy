@@ -410,3 +410,567 @@ a {
     height: 285px;
   }
 }
+
+/* ========================================
+   PROGRAM DETAILS
+======================================== */
+
+.program-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  color: #d6a21d;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.program-link::after {
+  content: " ←";
+  margin-right: 6px;
+}
+
+.program-details {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  overflow-y: auto;
+
+  background: #0b1f3a;
+  color: #f4f0e8;
+
+  direction: rtl;
+}
+
+.program-details-inner {
+  width: min(100% - 40px, 1180px);
+  margin: 0 auto;
+  padding: 32px 0 70px;
+}
+
+.close-program {
+  margin-bottom: 42px;
+  padding: 10px 16px;
+
+  border: 1px solid rgba(214, 162, 29, 0.35);
+  border-radius: 10px;
+
+  background: transparent;
+  color: #f4f0e8;
+
+  font-family: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.program-details-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.program-details-age {
+  display: inline-block;
+
+  padding: 8px 14px;
+  margin-bottom: 15px;
+
+  border-radius: 999px;
+
+  background: rgba(214, 162, 29, 0.15);
+  color: #d6a21d;
+
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.program-details-label {
+  margin: 8px 0;
+
+  color: #d6a21d;
+  font-weight: 700;
+}
+
+.program-details h2 {
+  margin: 0;
+
+  font-size: clamp(42px, 8vw, 72px);
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.program-intro {
+  max-width: 600px;
+
+  color: rgba(244, 240, 232, 0.8);
+
+  font-size: 17px;
+  line-height: 2;
+}
+
+.program-details-main-image {
+  width: 100%;
+  display: block;
+
+  border-radius: 26px;
+  border: 1px solid rgba(214, 162, 29, 0.4);
+}
+
+
+/* WHAT THEY LEARN */
+
+.learning-section {
+  padding: 100px 0;
+}
+
+.learning-section > h3,
+.learning-method h3,
+.tools-heading h3 {
+  margin: 8px 0 35px;
+
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.4;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.learning-item {
+  min-height: 105px;
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  border: 1px solid rgba(244, 240, 232, 0.1);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.learning-item span {
+  color: #d6a21d;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.learning-item p {
+  margin: 0;
+
+  color: #f4f0e8;
+
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+
+/* LEARNING METHOD */
+
+.learning-method {
+  padding: 70px 0;
+
+  border-top: 1px solid rgba(244, 240, 232, 0.1);
+  border-bottom: 1px solid rgba(244, 240, 232, 0.1);
+}
+
+.learning-method p {
+  max-width: 660px;
+
+  color: rgba(244, 240, 232, 0.75);
+
+  font-size: 17px;
+  line-height: 2;
+}
+
+.learning-flow {
+  margin-top: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.learning-flow span {
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: #d6a21d;
+  color: #0b1f3a;
+
+  font-weight: 800;
+}
+
+.learning-flow b {
+  color: rgba(244, 240, 232, 0.45);
+}
+
+
+/* TOOLS */
+
+.program-tools {
+  padding: 100px 0;
+}
+
+.tools-heading {
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+
+.tools-heading p {
+  color: rgba(244, 240, 232, 0.75);
+
+  font-size: 17px;
+  line-height: 2;
+}
+
+.tools-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.tools-images img {
+  display: block;
+
+  width: 100%;
+
+  border-radius: 22px;
+  border: 1px solid rgba(214, 162, 29, 0.35);
+}
+
+
+/* BOOKING */
+
+.program-booking {
+  padding: 60px 25px;
+
+  text-align: center;
+
+  border-radius: 28px;
+
+  background: #f4f0e8;
+  color: #0b1f3a;
+}
+
+.program-booking p {
+  margin: 0 0 8px;
+
+  color: #8c6a13;
+  font-weight: 800;
+}
+
+.program-booking h3 {
+  max-width: 650px;
+  margin: 0 auto 28px;
+
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.5;
+}
+
+.program-booking a {
+  display: inline-flex;
+
+  padding: 15px 28px;
+
+  border-radius: 12px;
+
+  background: #d6a21d;
+  color: #0b1f3a;
+
+  text-decoration: none;
+  font-weight: 900;
+}
+
+
+/* TABLET / DESKTOP */
+
+@media (min-width: 760px) {
+
+  .program-details-hero {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+  }
+
+  .learning-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tools-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   ROBOTICS ENGINEERING DETAILS
+======================================== */
+
+.levels-section {
+  padding: 100px 0;
+}
+
+.levels-heading {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.levels-heading h3 {
+  margin: 8px 0 0;
+
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.4;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.level-card {
+  position: relative;
+
+  padding: 28px 24px;
+
+  border: 1px solid rgba(244, 240, 232, 0.1);
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.featured-level {
+  border-color: rgba(214, 162, 29, 0.4);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(214, 162, 29, 0.09),
+      rgba(255, 255, 255, 0.03)
+    );
+}
+
+.level-number {
+  display: block;
+
+  color: #d6a21d;
+
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.level-name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px 0 20px;
+  padding: 8px 16px;
+
+  border: 1px solid rgba(214, 162, 29, 0.45);
+  border-radius: 10px;
+
+  background: rgba(214, 162, 29, 0.1);
+  color: #d6a21d;
+
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1.2px;
+}
+
+.level-card h4 {
+  margin: 0 0 20px;
+
+  color: #f4f0e8;
+
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.level-card ul {
+  margin: 0;
+  padding-right: 18px;
+
+  color: rgba(244, 240, 232, 0.75);
+
+  line-height: 2;
+}
+
+.level-card li::marker {
+  color: #d6a21d;
+}
+
+
+/* EV3 KIT */
+
+.engineering-tools {
+  padding: 90px 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+
+  align-items: center;
+}
+
+.engineering-tools-text {
+  max-width: 650px;
+}
+
+.engineering-tools h3 {
+  margin: 8px 0 15px;
+
+  font-size: clamp(30px, 5vw, 46px);
+}
+
+.engineering-tools p {
+  color: rgba(244, 240, 232, 0.75);
+
+  font-size: 17px;
+  line-height: 2;
+}
+
+.engineering-tools img {
+  width: 100%;
+
+  display: block;
+
+  border-radius: 24px;
+  border: 1px solid rgba(214, 162, 29, 0.35);
+}
+
+
+/* ENGINEERING CHALLENGE */
+
+.engineering-challenge {
+  padding: 90px 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  align-items: center;
+
+  border-top: 1px solid rgba(244, 240, 232, 0.1);
+  border-bottom: 1px solid rgba(244, 240, 232, 0.1);
+}
+
+.engineering-challenge img {
+  width: 100%;
+  display: block;
+
+  border-radius: 24px;
+  border: 1px solid rgba(214, 162, 29, 0.35);
+}
+
+.engineering-challenge h3 {
+  margin: 8px 0 18px;
+
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.4;
+}
+
+.engineering-challenge p {
+  max-width: 650px;
+
+  color: rgba(244, 240, 232, 0.75);
+
+  font-size: 17px;
+  line-height: 2;
+}
+
+
+/* SKILLS */
+
+.skills-section {
+  padding: 90px 0;
+}
+
+.skills-list {
+  margin-top: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list span {
+  padding: 12px 18px;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(214, 162, 29, 0.35);
+
+  background: rgba(214, 162, 29, 0.08);
+  color: #f4f0e8;
+
+  font-weight: 700;
+}
+
+
+/* OUTCOME */
+
+.program-outcome {
+  margin-bottom: 80px;
+  padding: 45px;
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(214, 162, 29, 0.13),
+      rgba(255, 255, 255, 0.03)
+    );
+
+  border: 1px solid rgba(214, 162, 29, 0.25);
+}
+
+.program-outcome h3 {
+  max-width: 760px;
+  margin: 10px 0 15px;
+
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.5;
+}
+
+.program-outcome p {
+  max-width: 720px;
+
+  color: rgba(244, 240, 232, 0.75);
+
+  font-size: 17px;
+  line-height: 2;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 760px) {
+
+  .levels-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .engineering-tools {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+  }
+
+  .engineering-challenge {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+  }
+}
