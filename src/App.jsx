@@ -1272,6 +1272,137 @@ function App() {
     </div>
   </section>
 )}
+
+{/* ========================================
+    CONTACT
+======================================== */}
+
+<section className="contact-section" id="contact">
+
+  <div className="contact-inner">
+
+    <div className="contact-heading">
+
+      <span className="contact-kicker">
+        ONE ACADEMY
+      </span>
+
+      <h2>
+        جاهزين نبدأ
+        <span> الرحلة معًا؟</span>
+      </h2>
+
+      <p>
+        للتسجيل في البرامج أو فرق المسابقات،
+        تواصل معنا مباشرة وسنساعدك في اختيار المسار المناسب.
+      </p>
+
+    </div>
+
+
+    <div className="contact-grid">
+
+      {/* LOCATION */}
+      <div className="contact-card">
+
+        <div className="contact-icon">
+          📍
+        </div>
+
+        <span className="contact-label">
+          زورنا
+        </span>
+
+        <h3>ONE Academy – دمياط الجديدة</h3>
+
+        <p>
+          المشاية خلف سيتي جراند مول
+          <br />
+          أعلى محل سرفلة – الدور الأول
+        </p>
+
+      </div>
+
+
+      {/* PHONE */}
+      <div className="contact-card">
+
+        <div className="contact-icon">
+          ☎
+        </div>
+
+        <span className="contact-label">
+          تواصل معنا
+        </span>
+
+        <h3 dir="ltr">01036545160</h3>
+
+        <p>
+          متاح للاتصال أو التواصل عبر واتساب
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* WHATSAPP CTA */}
+
+    <div className="contact-whatsapp">
+
+      <div>
+        <span>للحجز والاستفسار</span>
+        <h3>تواصل معنا مباشرة عبر واتساب</h3>
+      </div>
+
+      <a
+        href="https://wa.me/201036545160?text=مرحبًا%20ONE%20Academy،%20أرغب%20في%20الاستفسار."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        تواصل عبر واتساب
+        <span>←</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+{/* ========================================
+    FOOTER
+======================================== */}
+
+<footer className="site-footer">
+
+  <div className="footer-inner">
+
+    <img
+      src="/images/logo.png"
+      alt="ONE Academy"
+      className="footer-logo"
+    />
+
+    <p>
+      learn • build • lead
+    </p>
+
+<div className="footer-credits">
+  <span>© 2026 ONE Academy. All Rights Reserved.</span>
+
+  <span className="developer-credit">
+    Designed & Developed by
+    <strong> Farah Sanad</strong>
+  </span>
+</div>
+
+  </div>
+
+</footer>
+
+
     </main>
   );
 }
