@@ -974,3 +974,489 @@ a {
     gap: 60px;
   }
 }
+
+.robotics-ai-levels {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.level-meta {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(225, 169, 18, 0.18);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 1100px) {
+  .robotics-ai-levels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .robotics-ai-levels {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Robotics & AI Kit - centered */
+.program-tools {
+  text-align: center;
+}
+
+.program-tools .tools-heading {
+  max-width: 750px;
+  margin: 0 auto 35px;
+}
+
+.program-tools .tools-images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-tools .tools-images img {
+  display: block;
+  width: min(850px, 90%);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* ========================================
+   FIRST LEGO LEAGUE
+======================================== */
+
+.fll-section {
+  padding: 100px 20px;
+  direction: rtl;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(214, 162, 29, 0.1),
+      transparent 32%
+    ),
+    #081a32;
+
+  color: #f4f0e8;
+}
+
+.fll-intro {
+  width: min(100%, 850px);
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.fll-intro h2 {
+  margin: 5px 0 20px;
+
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+.fll-intro h2 span {
+  color: #d6a21d;
+}
+
+.fll-intro p {
+  max-width: 760px;
+  margin: 0 auto;
+
+  color: rgba(244, 240, 232, 0.74);
+
+  font-size: 17px;
+  line-height: 2;
+}
+
+
+/* PATH CARDS */
+
+.fll-paths {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.fll-card {
+  overflow: hidden;
+
+  border: 1px solid rgba(214, 162, 29, 0.24);
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.fll-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(214, 162, 29, 0.6);
+}
+
+.fll-card-image {
+  overflow: hidden;
+}
+
+.fll-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 310px;
+
+  object-fit: cover;
+}
+
+.fll-card-content {
+  padding: 28px;
+}
+
+.fll-age {
+  display: inline-flex;
+
+  margin-bottom: 14px;
+  padding: 7px 13px;
+
+  border-radius: 999px;
+
+  color: #d6a21d;
+  background: rgba(214, 162, 29, 0.11);
+
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.fll-card h3 {
+  margin: 0 0 10px;
+
+  color: #f4f0e8;
+
+  font-size: 31px;
+}
+
+.fll-card p {
+  margin: 0 0 24px;
+
+  color: rgba(244, 240, 232, 0.7);
+
+  line-height: 1.8;
+}
+
+.fll-discover {
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: #d6a21d;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 900;
+
+  cursor: pointer;
+}
+
+.fll-discover::after {
+  content: " ←";
+  margin-right: 7px;
+}
+
+
+/* EXPLORE VS CHALLENGE */
+
+.fll-difference {
+  width: min(100%, 950px);
+  margin: 55px auto 0;
+  padding: 28px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+
+  text-align: center;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(244, 240, 232, 0.08);
+}
+
+.fll-difference strong {
+  color: #d6a21d;
+  font-size: 18px;
+}
+
+.fll-difference p {
+  margin: 7px 0 0;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fll-difference > span {
+  color: #d6a21d;
+  font-size: 25px;
+}
+
+
+/* FLL JOURNEY */
+
+.fll-journey,
+.research-process {
+  padding: 90px 0;
+
+  border-bottom:
+    1px solid rgba(244, 240, 232, 0.1);
+}
+
+.fll-journey h3,
+.research-process h3 {
+  max-width: 780px;
+  margin: 10px 0 35px;
+
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.5;
+}
+
+.fll-journey-flow,
+.research-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.fll-journey-flow span,
+.research-flow span {
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  background: #d6a21d;
+  color: #bcbd9b;
+
+  font-weight: 900;
+}
+
+.fll-journey-flow b,
+.research-flow b {
+  color: rgba(244, 240, 232, 0.4);
+}
+
+
+/* FLL PILLARS */
+
+.fll-pillars,
+.challenge-grid {
+  padding: 90px 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.fll-pillars article,
+.challenge-card {
+  padding: 27px;
+
+  border-radius: 22px;
+
+  border:
+    1px solid rgba(214, 162, 29, 0.2);
+
+  background:
+    rgba(255, 255, 255, 0.035);
+}
+
+.fll-pillars article > span,
+.challenge-number {
+  color: #d6a21d;
+
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.fll-pillars h4,
+.challenge-card h4 {
+  margin: 13px 0;
+
+  color: #f4f0e8;
+
+  font-size: 25px;
+}
+
+.fll-pillars p,
+.challenge-card p {
+  color: rgba(244, 240, 232, 0.7);
+
+  line-height: 1.9;
+}
+
+.challenge-subtitle {
+  color: #d6a21d !important;
+  font-weight: 800;
+}
+
+
+/* CHALLENGE */
+
+.challenge-areas {
+  padding: 90px 0 0;
+}
+
+.challenge-grid {
+  padding-top: 20px;
+}
+
+
+/* BIG MESSAGE */
+
+.fll-big-message {
+  margin: 85px 0;
+  padding: 50px 30px;
+
+  text-align: center;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(214, 162, 29, 0.15),
+      rgba(255, 255, 255, 0.03)
+    );
+
+  border:
+    1px solid rgba(214, 162, 29, 0.3);
+}
+
+.fll-big-message p {
+  margin: 0 0 10px;
+
+  color: #d6a21d;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.fll-big-message h3 {
+  max-width: 850px;
+  margin: 0 auto;
+
+  font-size: clamp(29px, 5vw, 45px);
+  line-height: 1.55;
+}
+
+
+/* FLL GALLERY */
+
+.fll-gallery-section {
+  padding: 40px 0 90px;
+}
+
+.fll-gallery-heading {
+  margin-bottom: 32px;
+}
+
+.fll-gallery-heading h3 {
+  margin: 8px 0 0;
+
+  font-size: clamp(29px, 5vw, 43px);
+}
+
+.fll-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.fll-gallery img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  min-height: 300px;
+
+  object-fit: cover;
+
+  border-radius: 24px;
+
+  border:
+    1px solid rgba(214, 162, 29, 0.35);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 760px) {
+
+  .fll-paths {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fll-difference {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .fll-pillars,
+  .challenge-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fll-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .fll-section {
+    padding: 75px 18px;
+  }
+
+  .fll-card-image img {
+    height: 220px;
+  }
+
+  .fll-gallery img {
+    min-height: 220px;
+  }
+
+  .fll-journey-flow,
+  .research-flow {
+    gap: 8px;
+  }
+
+  .fll-journey-flow span,
+  .research-flow span {
+    font-size: 13px;
+    padding: 8px 11px;
+  }
+}
+
+.fll-intro .section-kicker {
+  display: block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #d6a21d;
+  margin-bottom: 18px;
+}
+
+.fll-intro h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.35;
+}
