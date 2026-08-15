@@ -1273,6 +1273,291 @@ function App() {
   </section>
 )}
 
+
+{/* ========================================
+    ACHIEVEMENTS
+======================================== */}
+
+<section className="achievements-section">
+
+  <div className="achievements-inner">
+
+    <div className="achievements-heading">
+      <span className="section-kicker">OUR ACHIEVEMENTS</span>
+
+      <h2>
+        من التدريب…
+        <span> إلى منصات التتويج.</span>
+      </h2>
+
+      <p>
+        فرق ONE Academy شاركت ونافست وحققت جوائز
+        في FIRST LEGO League داخل مصر وخارجها.
+      </p>
+    </div>
+
+
+    {/* TOP VISUALS */}
+
+    <div className="achievements-visuals">
+
+      <img
+        src="/images/achievement-fll-challenge.png"
+        alt="FLL Challenge Achievements"
+      />
+
+      <img
+        src="/images/achievement-fll-explore.png"
+        alt="FLL Explore Achievements"
+      />
+
+      <img
+        src="/images/achievement-world-champion.png"
+        alt="World Championship Achievement"
+      />
+
+    </div>
+
+
+    {/* CHALLENGE */}
+
+    <div className="achievement-group">
+
+      <div className="achievement-group-heading">
+        <span>FLL CHALLENGE</span>
+        <h3>فرق صنعت نتائج حقيقية</h3>
+      </div>
+
+
+      {/* TROJANS FEATURED */}
+
+      <article className="achievement-featured">
+
+        <div className="achievement-featured-content">
+
+          <span className="team-label">TROJANS Team</span>
+
+          <h3>من تصميم الروبوت إلى بطولة العالم</h3>
+
+          <div className="achievement-list">
+
+            <div>
+              <strong>2020</strong>
+              <span>🥇 1st Place — Mechanical Design</span>
+            </div>
+
+            <div>
+              <strong>2021</strong>
+              <span>🥉 3rd Place — Champions Award</span>
+            </div>
+
+            <div className="world-highlight">
+              <strong>2021</strong>
+              <span>🌍 4th Place — World Championship, Greece</span>
+            </div>
+
+            <div>
+              <strong>2022</strong>
+              <span>🥈 2nd Place — Robot Design</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div className="achievement-proof">
+
+          <img
+            src="/images/trojans-greece-world-championship.png"
+            alt="Trojans Greece World Championship proof"
+          />
+
+        </div>
+
+      </article>
+
+
+      {/* OTHER CHALLENGE TEAMS */}
+
+      <div className="achievement-cards">
+
+        <article className="achievement-card">
+          <span className="team-label">ABC Team</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2022</strong>
+              <span>⭐🌟 Rising All-Star Award 🌟⭐</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article className="achievement-card">
+          <span className="team-label">KNIGHTS Team</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2021</strong>
+              <span>⭐ Rising All-Star Award</span>
+            </div>
+
+            <div>
+              <strong>2022</strong>
+              <span>🏅 Engineering Excellence Award</span>
+            </div>
+
+            <div>
+              <strong>2023</strong>
+              <span>🥈 2nd Place — Core Values Award</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article className="achievement-card">
+          <span className="team-label">PHOENIX Team</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2023</strong>
+              <span>🥇 1st Place — Robot Design</span>
+            </div>
+
+            <div>
+              <strong>2024</strong>
+              <span>🥈 2nd Place — Robot Design</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article className="achievement-card">
+          <span className="team-label">GENESIS Team</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2026</strong>
+              <span>⭐🌟 Rising All-Star Award 🌟⭐</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+
+    {/* EXPLORE */}
+
+    <div className="achievement-group explore-achievements">
+
+      <div className="achievement-group-heading">
+        <span>FLL EXPLORE</span>
+        <h3>إنجازات تبدأ من أول تجربة</h3>
+      </div>
+
+
+      <div className="achievement-cards">
+
+        <article className="achievement-card">
+          <span className="team-label">SMART HEROES Team</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2024</strong>
+              <span>🏆 Team Model Award</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article className="achievement-card">
+          <span className="team-label">MONSTERS INC Team</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2024</strong>
+              <span>⭐ Rising All-Star Award</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article className="achievement-card">
+          <span className="team-label">MAGIC MAKERS Team</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2024</strong>
+              <span>❤️ Core Values Award</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article className="achievement-card">
+          <span className="team-label">FANTASTIC FOUR</span>
+
+          <div className="achievement-list">
+            <div>
+              <strong>2026</strong>
+              <span>🏆 Best Team Model Award</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ========================================
+    FEEDBACK
+======================================== */}
+
+<section className="feedback-section">
+
+  <div className="feedback-inner">
+
+    <div className="feedback-heading">
+      <span className="section-kicker">WHAT PARENTS SAY</span>
+
+      <h2>
+        كلامهم عن التجربة…
+        <span> أهم من أي إعلان.</span>
+      </h2>
+
+      <p>
+        آراء حقيقية من أولياء الأمور عن تجربتهم مع ONE Academy.
+      </p>
+    </div>
+
+
+    <div className="feedback-grid">
+
+      {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+        <article className="feedback-card" key={item}>
+
+          <img
+            src={`/images/feedback${item}.jpeg`}
+            alt={`ONE Academy feedback ${item}`}
+          />
+
+        </article>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
 {/* ========================================
     CONTACT
 ======================================== */}
