@@ -664,7 +664,7 @@ function App() {
       <div className="program-card-content">
         <span className="program-age">6–9 سنوات</span>
 
-        <h3>المستكشف الصغير</h3>
+        <h3>Spike Essential</h3>
 
         <p>LEGO® SPIKE Essential</p>
 
@@ -684,7 +684,7 @@ function App() {
       />
 
       <div className="program-card-content">
-        <span className="program-age">9–16 سنة</span>
+        <span className="program-age">10–16 سنة</span>
 
         <h3>Robotics Engineering</h3>
 
@@ -897,7 +897,7 @@ function App() {
 
         <div className="program-details-text">
           <span className="program-details-age">
-            من 9 إلى 16 سنة
+            من 10 إلى 16 سنة
           </span>
 
           <p className="program-details-label">
